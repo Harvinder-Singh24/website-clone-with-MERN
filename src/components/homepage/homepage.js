@@ -6,12 +6,12 @@ import './homepage.css'
 function Homepage() {
   return (
     <>
-        <div className="homepagebackground">
+      <div className="homepagebackground">
+        <div className="homepagemaincontainer">
         <Navbar />
-      <div className="homepagemaincontainer">
           <div className="headinghomepage">
             WE ARE STARTUP<span> SPECIALISTS</span></div>
-        <div className="quote">Having successful track record of bringing 500+ products to life.<br />
+          <div className="quote">Having successful track record of bringing 500+ products to life.<br />
           Leading the path of innovation!</div>
         </div>
       </div>
