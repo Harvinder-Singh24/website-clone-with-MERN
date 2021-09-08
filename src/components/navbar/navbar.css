@@ -1,0 +1,254 @@
+*{margin: 0px;
+padding: 0px;}
+
+.navbar{
+    background: rgba(48, 48, 48, 0.4);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+position: relative;
+    top: 0;
+    z-index: 999;
+}
+.navbarcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    max-width: 1500px;
+
+}
+.navimage{
+    justify-self: start;
+    width: 170px;
+    height: auto;  
+}
+.navbarlogo{
+    
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+   
+}
+  
+.navmenu{
+    display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+
+.nav-links:hover{
+    font-size: 15.5px;
+    cursor: pointer;
+}
+
+.multicolor-horizontal-line{
+    display: flex;
+ 
+}
+.greenline{
+    background-color: green;
+    width: 33%;
+    height: 5px;
+    
+}
+.purpleline{
+    background-color: purple;
+    width: 34%;
+    height: 5px;
+
+}
+.skyline{
+    background-color:rgb(10, 162, 223);
+    width: 33%;
+    height: 5px;
+
+}
+.menu-icon {
+    display:none;
+  }
+
+  
+
+ .navmenucontact{
+   
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1.5rem 0rem 0rem 0rem;
+    list-style: none;
+    
+ }
+.concact-links> i{
+    font-size: 1.7rem;
+    color:grey;
+     padding-right: 1rem;
+}
+ .contactcountryflag{
+     height: 20px;
+     width: 45px;
+     padding-right: 1rem;
+     
+ }
+ .concact-links{
+     text-decoration: none;
+     padding: 0rem 1rem 1rem 1.3rem;
+     font-size: 1.2rem;
+    color: white;
+ }
+*{margin: 0px;
+padding: 0px;}
+
+.navbar{
+    background: rgba(48, 48, 48, 0.4);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+position: relative;
+    top: 0;
+    z-index: 999;
+}
+.navbarcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    max-width: 1500px;
+
+}
+.navimage{
+    justify-self: start;
+    width: 170px;
+    height: auto;  
+}
+.navbarlogo{
+    
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+   
+}
+  
+.navmenu{
+    display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+
+.nav-links:hover{
+    font-size: 15.5px;
+    cursor: pointer;
+}
+
+.multicolor-horizontal-line{
+    display: flex;
+ 
+}
+.greenline{
+    background-color: green;
+    width: 33%;
+    height: 5px;
+    
+}
+.purpleline{
+    background-color: purple;
+    width: 34%;
+    height: 5px;
+
+}
+.skyline{
+    background-color:rgb(10, 162, 223);
+    width: 33%;
+    height: 5px;
+
+}
+.menu-icon {
+    display:none;
+  }
+
+  
+
+ .navmenucontact{
+   
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1.5rem 0rem 0rem 0rem;
+    list-style: none;
+    
+ }
+.concact-links> i{
+    font-size: 1.7rem;
+    color:grey;
+     padding-right: 1rem;
+}
+ .contactcountryflag{
+     height: 20px;
+     width: 45px;
+     padding-right: 1rem;
+     
+ }
+ .concact-links{
+     text-decoration: none;
+     padding: 0rem 1rem 1rem 1.3rem;
+     font-size: 1.2rem;
+    color: white;
+ }

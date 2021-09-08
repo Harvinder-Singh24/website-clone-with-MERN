@@ -1,8 +1,10 @@
 *{margin: 0px;
 padding: 0px;}
+
 .homepagebackground{
+    margin-top: -8.6rem;
     object-fit: cover ;
-    background-image: url("https://pixabay.com/get/gc5ec04eed1cd12f089d8a24b87d73cda15cce78637010686d178fffc96fdc012869b4bcb1381046542a1c5781bec64106a8d84ee5ace2dfffa9dc9192481bf1a_1920.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://pixabay.com/get/gc5ec04eed1cd12f089d8a24b87d73cda15cce78637010686d178fffc96fdc012869b4bcb1381046542a1c5781bec64106a8d84ee5ace2dfffa9dc9192481bf1a_1920.jpg");
     background-repeat: no-repeat;
     height: auto;
     width: 100%
