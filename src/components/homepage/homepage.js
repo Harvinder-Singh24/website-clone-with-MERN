@@ -7,8 +7,8 @@ function Homepage() {
   return (
     <>
       <Navbar />
-      <div className="homepagemaincontainer">
         <div className="homepagebackground">
+      <div className="homepagemaincontainer">
           <div className="headinghomepage">
             WE ARE STARTUP<span> SPECIALISTS</span></div>
         <div className="quote">Having successful track record of bringing 500+ products to life.<br />

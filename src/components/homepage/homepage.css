@@ -1,18 +1,37 @@
 *{margin: 0px;
 padding: 0px;}
+.homepagebackground{
+    object-fit: cover ;
+    background-image: url("https://pixabay.com/get/gc5ec04eed1cd12f089d8a24b87d73cda15cce78637010686d178fffc96fdc012869b4bcb1381046542a1c5781bec64106a8d84ee5ace2dfffa9dc9192481bf1a_1920.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%
+    
+}
+
 .homepagemaincontainer{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
 
 }
-.homepagebackground{
-    object-fit: cover;
-    background-image: url("https://pixabay.com/get/gcd17e970c8d05abc0641578f3066e5231969228a0f4d20d4094a4873838a7819c368a610a9eb3e2ffccc373e29c5b0981bf4aa5795b7daec39ddaa25a614a40c_1920.jpg");
-    height: 100vh;
 
-    width: 100%;
 
+.headinghomepage{
+    font-size: 3.7em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(58, 193, 247);
+}
+.headinghomepage>span{
+
+    color:white;
 }
 
+.quote{
+    font-size: 1.4em;
+   text-align: center;
+   color: white;
+}
