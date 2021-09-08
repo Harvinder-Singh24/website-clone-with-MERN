@@ -6,8 +6,8 @@ import './homepage.css'
 function Homepage() {
   return (
     <>
-      <Navbar />
         <div className="homepagebackground">
+        <Navbar />
       <div className="homepagemaincontainer">
           <div className="headinghomepage">
             WE ARE STARTUP<span> SPECIALISTS</span></div>
