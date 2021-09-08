@@ -5,7 +5,7 @@ import indiaflag from "../../images/indiaflag.png";
 import singaporeflag from "../../images/singaporeflag.png";
 import usaflag from "../../images/usaflag.png";
 
-function Navbar() {
+  function Navbar() {
   const [click, setClick] = useState(false);
   const handleChange = () => setClick(!click);
   const closemobilebar = () => setClick(!click);
@@ -57,15 +57,15 @@ function Navbar() {
             </li>
 
             <li className="concact-items">
-              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={usaflag} className='contactcountryflag' />+1669-213-8571</Link>
+              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={usaflag} className='contactcountryflag' alt="Country Flag Not Found" />+1669-213-8571</Link>
             </li>
 
             <li className="concact-items">
-              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={singaporeflag} className='contactcountryflag' />+65-31585521</Link>
+              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={singaporeflag} className='contactcountryflag' alt="Country Flag Not Found" />+65-31585521</Link>
             </li>
 
             <li className="concact-items">
-              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={indiaflag} className='contactcountryflag' />+91-9674533118</Link>
+              <Link to="/" className="concact-links" onClick={closecontactmobilebar}><img src={indiaflag} className='contactcountryflag'  alt="Country Flag Not Found"/>+91-9674533118</Link>
             </li>
 
           </ul>
