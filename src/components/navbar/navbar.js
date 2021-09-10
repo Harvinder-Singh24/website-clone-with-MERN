@@ -9,7 +9,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleChange = () => setClick(!click);
   const closemobilebar = () => setClick(!click);
-  const closecontactmobilebar = () => setClick(!click);
+ 
 
 
   return (

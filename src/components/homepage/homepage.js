@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../navbar/navbar'
 import './homepage.css'
 import Work from './work'
+import Ourexpertise from './ourexpertise';
 
 
 function Homepage() {
@@ -17,6 +18,7 @@ function Homepage() {
         </div>
       </div>
 <Work/>
+<Ourexpertise/>
     </>
   )
 }

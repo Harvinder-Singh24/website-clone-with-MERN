@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+.expertisemaincontainer{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: auto;
+    background-color: rgb(28, 186, 248) ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.expertisemaincontainer>span{
+    margin-top: -3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    
+}
+.expertisecolor{
+    color: orangered; 
+}
+.expertisemaincontainer>p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight:bold;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+.expertisepara{
+    font-weight: lighter;
+margin-top: 3rem;
+}
