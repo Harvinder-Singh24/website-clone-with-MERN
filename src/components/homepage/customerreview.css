@@ -10,7 +10,7 @@ box-sizing: border-box;
     flex-direction: column;
     height: 140vh;
     width: auto;
-    background-color: whitesmoke;
+    background-color: white;
      align-items: center;
 } 
 .reviewparahead{

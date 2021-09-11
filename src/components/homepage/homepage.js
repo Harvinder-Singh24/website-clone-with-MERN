@@ -6,6 +6,7 @@ import Ourexpertise from './ourexpertise';
 import Specialised from './specialised';
 import Aboutcbnits from './aboutcbnits';
 import Customerreview from './customerreview';
+import Footer from '../footer/footer';
 
 function Homepage() {
   return (
@@ -24,6 +25,7 @@ function Homepage() {
 <Specialised/>
 <Aboutcbnits/>
 <Customerreview />
+<Footer/>
     </>
   )
 }

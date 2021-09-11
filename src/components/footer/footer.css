@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.waveicon{
+
+    overflow: hidden;
+    height: auto;
+    vertical-align: middle;
+    border: none;
+    width: 100vw;
+    background-color: #082a37;
+}
+.footerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 110%;
+    background-color: #082a37;
+}
+.certificateimage{
+    height: 200px;
+    width: 140px;
+    border-radius: 4px;
+}
