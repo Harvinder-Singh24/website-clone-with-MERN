@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.specialisedcontainer{
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.specialisedmaincontainer, .whymaincontainer{
+  display: flex;
+  height: 25vh;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.whymaincontainer{
+    flex-direction: column;
+}
+
+.specialisedparahead{
+  margin-top: -2rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.whyparahead{
+  margin-top: -2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.whyparasubhead{
+  /* margin-top: -2rem; */
+  padding:0.7rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.specialisedparahead>span, .whyparahead>span{
+  color: rgb(58, 193, 247);
+}
+
+.specialiseddivdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7vh;
+}
+
+.imagehealth, .readmorediv{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 15px;
+}
+
+.readmorebtn{
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+    border-radius: 6px;
+}

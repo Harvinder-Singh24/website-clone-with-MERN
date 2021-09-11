@@ -3,6 +3,7 @@ import Navbar from '../navbar/navbar'
 import './homepage.css'
 import Work from './work'
 import Ourexpertise from './ourexpertise';
+import Specialised from './specialised';
 
 
 function Homepage() {
@@ -19,6 +20,7 @@ function Homepage() {
       </div>
 <Work/>
 <Ourexpertise/>
+<Specialised/>
     </>
   )
 }
