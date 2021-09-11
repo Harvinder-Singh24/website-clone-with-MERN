@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.backgroundimage{
+    background-image:  linear-gradient(rgba(9, 141, 31, 0.7), rgba(9, 141, 31, 0.7)),  url("../../images/discussion1.jpg");
+    /* object-fit: cover; */
+    /* background-repeat: no-repeat; */
+    height: 85vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.mainimage{
+    margin-top: -1.5rem;
+   /* margin-left: auto; */
+}
+.mainconentdiv{
+    display: flex;
+    flex: wrap;
+    justify-content:center; 
+      align-items:center;
+    width: auto;
+    height: 90vh;
+}
+
+.contentdiv{
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+}
+.parahead{
+    font-size: 2.5rem;
+    color:whitesmoke;
+    font-weight: 600;
+}
+.parahead1{
+    font-size: 1.5rem;
+    color:whitesmoke;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.parahead2{
+    width: 50%;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:500;
+    color: white;
+}

@@ -4,7 +4,7 @@ import './homepage.css'
 import Work from './work'
 import Ourexpertise from './ourexpertise';
 import Specialised from './specialised';
-
+import Aboutcbnits from './aboutcbnits';
 
 function Homepage() {
   return (
@@ -21,6 +21,7 @@ function Homepage() {
 <Work/>
 <Ourexpertise/>
 <Specialised/>
+<Aboutcbnits/>
     </>
   )
 }

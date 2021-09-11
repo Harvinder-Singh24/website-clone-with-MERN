@@ -9,16 +9,10 @@ function Specialised() {
             <p className="specialisedparahead"> OUR SPECIALISED <span> DOMAINS </span> </p> 
         </div>
         <div className="specialiseddiv">
-            <div className="specialiseddivdiv">
-                <div className="imagehealth">
-                    <img alt="health"/>
-                </div>
-                <div className="readmorediv">
-                    <button class="readmorebtn">Read More</button>
-                </div>
-            </div>
+                    <img  src="" alt="health" className="healthimage" />
+                    <button class="readmorebtn">Read More</button> 
         </div>
-        <hr/>
+        <div className="line"></div>
         <div className="whymaincontainer">
             <p className="whyparahead"> WHY <span> CBNITS ? </span> </p>
             <p className="whyparasubhead"> We don't deliberate. We deliver. </p> 
