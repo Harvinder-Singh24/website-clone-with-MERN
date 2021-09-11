@@ -14,8 +14,8 @@ function Aboutcbnits() {
                <p class="parahead2"> CBNITS is a premier Enterprise Solution & IT service provider. With 
                 our effective digital solutions and immense expertise in cutting-
                 edge technologies, we are helping companies around the world to
-                transform their businesses.
-<br/><br/>
+                transform their businesses.</p>
+                <p class="parahead2">
 With our 200+ expert-level software engineers, cloud engineers, 
 cybersecurity experts, Data Scientists, and UX/UI designers, we
 have built an impressive portfolio worldwide. We strive for 

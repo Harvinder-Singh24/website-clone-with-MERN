@@ -29,6 +29,7 @@
 }
 
 .contentdiv{
+    width: 35%;
     margin-left: 2rem;
     margin-top: -1.5rem;
 }
@@ -44,9 +45,9 @@
     margin-bottom: 3rem;
 }
 .parahead2{
-    width: 50%;
     font-size: 1.1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight:500;
     color: white;
+    margin-bottom: 2rem;
 }
