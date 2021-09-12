@@ -1,0 +1,137 @@
+.u-userLauncherColor:not([disabled]) {
+    background-color: #000 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+.wrapper-AtBcr {
+    padding: 0.4rem 0.5rem;
+    border-radius: 999rem;
+    font-size: 1.07143rem;
+    border: none !important;
+    font-weight: 700;
+    display: flex; 
+    flex-direction: row;
+    position: fixed;
+    bottom: 22px;
+    right: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.helpcontainer{
+    font-size: 14px;
+    width: 22rem;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+
+.helpcontainerheading, .helpbackbtn{
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    color: white;
+    border:0px;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.07143rem;
+}
+
+.helpminimisebar{
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.helptitle{
+    display: flex;
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    font-size: 1.07143rem;
+    justify-content: center;
+}
+
+.helpcontainercontains{
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    height: 26rem;
+    background-color: white;
+    padding: 16px;
+}
+
+.helpsubmitsection{
+    display: flex;
+    background-color: white;
+    bottom: 0px;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    padding: 1.07143rem 1.42857rem;
+    padding-bottom: 12px;
+    border-top: 1.5px solid rgb(169, 168, 168);
+}
+
+.helpzendesklink{
+    width: 9rem;
+    margin-top: 16px;
+    color:grey;
+}
+
+.helpzendesklink:hover{
+    color:rgb(67, 66, 66);
+}
+
+.helpsubmitbtn{
+    width: 8.5rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.helplabel{
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+}
+
+.helpinput:hover, .helpinput:focus, .helptextarea:hover, .helptextarea:focus {
+    border-color: rgb(104, 115, 125) !important;
+}
+
+.helpinput, .helptextarea {
+    appearance: none;
+    transition: border-color 0.25s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s, background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s;
+    border: 1px solid rgb(216, 220, 222);
+    border-top-color: rgb(216, 220, 222);
+    border-right-color: rgb(216, 220, 222);
+    border-bottom-color: rgb(216, 220, 222);
+    border-left-color: rgb(216, 220, 222);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-family: inherit;
+    padding: 0.714286em 0.857143em;
+    min-height: 40px;
+    line-height: 1.28571;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 57, 65);
+    cursor: auto;
+}
+
+.helptextarea {
+    resize: none;
+    height: 120px;
+}
+
+.helpbutton {
+    cursor: pointer;
+    font-family: inherit;
+}
