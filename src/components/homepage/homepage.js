@@ -7,10 +7,12 @@ import Specialised from './specialised';
 import Aboutcbnits from './aboutcbnits';
 import Customerreview from './customerreview';
 import Footer from '../footer/footer';
+import Helpbtn from '../homepage/helpbtn';
 
 function Homepage() {
   return (
     <>
+      <Helpbtn/>
         <Navbar />
       <div className="homepagebackground">
         <div className="homepagemaincontainer">
