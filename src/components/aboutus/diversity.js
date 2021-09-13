@@ -1,4 +1,5 @@
 import React from 'react'
+import './diversity.css'
 import TCS from '../../images/tcs.png'
 import vmware from '../../images/vmware.png'
 import persistent from '../../images/persistent.png'
@@ -14,7 +15,8 @@ function Diversity() {
     return (
         <>
             <div className="diversitymaincontainer">
-                <p> diversity of our team</p>
+            <div className="maindiversitydiv">
+                <p className="headingdiversity"> diversity of<span> our team</span></p>
                 <div className="diversitycompanylogos">
                     <div className="copmanylogo"><img src={TCS} alt="TCS png" /></div>
                     <div className="copmanylogo"><img src={vmware} alt="VMware png" /></div>
@@ -31,8 +33,9 @@ function Diversity() {
                     <div className="copmanylogo"><img src={capgemini} alt="Capgemini png" /></div>
                 </div>
             </div>
+            </div>
 
-            <div className="x-factor">x-factor of cbnits</div>
+            <div className="x-factor">x-factor of &nbsp;<span> cbnits</span></div>
         </>
     )
 }

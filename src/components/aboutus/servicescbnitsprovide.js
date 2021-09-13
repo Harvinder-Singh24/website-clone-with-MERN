@@ -13,21 +13,19 @@ function Servicescbnitsprovide() {
     return (
         <>
             <div className="servicesmaincontainer">
+                    <p>  about <span>cbnits</span></p>
                 <div className="services">
-                    <p>  about cbnits</p>
                     <div className="servicesdetials">
-                        <ul>
-                            <li><img src={softpng} alt="Software Engineers png" /> <abbr> 200+ Exper-level Software Engineers,</abbr></li>
-                            <li><img src={cloudspng} alt="Cloud  Engineers png" /> <abbr>Cloud  Engineers,</abbr></li>
-                            <li><img src={cyberpng} alt="Cybersecurity Expert png" /> <abbr>Cybersecurity Experts,</abbr></li>
-                            <li><img src={datasciencepng} alt="Data Scientist  Engineers png" /> <abbr> Data Scientists,</abbr></li>
-                            <li><img src={uxuipng} alt="UX/UI png" /> <abbr>UX/UI Designers,</abbr></li>
-                        </ul>
+                            <div className="serviesimagesandabbriviation"><img src={softpng} alt="Software Engineers png" /> <abbr> 200+ Exper-level Software Engineers,</abbr></div>
+                            <div className="serviesimagesandabbriviation"><img src={cloudspng} alt="Cloud  Engineers png" /> <abbr>Cloud  Engineers,</abbr></div>
+                            <div className="serviesimagesandabbriviation"><img src={cyberpng} alt="Cybersecurity Expert png" /> <abbr>Cybersecurity Experts,</abbr></div>
+                            <div className="serviesimagesandabbriviation"><img src={datasciencepng} alt="Data Scientist  Engineers png" /> <abbr> Data Scientists,</abbr></div>
+                            <div className="serviesimagesandabbriviation"><img src={uxuipng} alt="UX/UI png" /> <abbr>UX/UI Designers,</abbr></div> 
                     </div>
                 </div>
             </div>
 
-            <div className="x-factor">x-factor of cbnits</div>
+            
         </>
     )
 }
