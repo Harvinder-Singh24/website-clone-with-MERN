@@ -3,7 +3,8 @@ import Navbar from '../navbar/navbar'
 import './aboutus.css'
 import Footer from '../footer/footer';
 import Helpbtn from '../helpbutton/help';
-
+import Servicescbnitsprovide from './servicescbnitsprovide';
+import Diversity from './diversity';
 function Aboutus() {
     return (
       <>
@@ -16,6 +17,8 @@ function Aboutus() {
             <div className="aboutusquote">Our expertise , know more about what we do</div>
           </div>
         </div>
+<Servicescbnitsprovide/>
+<Diversity />
   <Footer/>
       </>
     )
