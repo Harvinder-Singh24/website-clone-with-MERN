@@ -5,6 +5,7 @@ import indiaflag from "../../images/indiaflag.png";
 import singaporeflag from "../../images/singaporeflag.png";
 import usaflag from "../../images/usaflag.png";
 import './navbar.css'
+// import Aboutus from '../aboutus/aboutus';
 
 
 
@@ -76,7 +77,7 @@ function Navbar() {
       </ul>
 
 
-     
+     {/* <Aboutus/> */}
 
     </>
   )

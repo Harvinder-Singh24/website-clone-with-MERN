@@ -7,8 +7,8 @@ import Specialised from './specialised';
 import Aboutcbnits from './aboutcbnits';
 import Customerreview from './customerreview';
 import Footer from '../footer/footer';
-import Helpbtn from '../homepage/helpbtn';
-
+import Helpbtn from '../helpbutton/help';
+// import Aboutus from '../aboutus/aboutus'
 function Homepage() {
   return (
     <>
@@ -28,6 +28,7 @@ function Homepage() {
 <Aboutcbnits/>
 <Customerreview />
 <Footer/>
+{/* <Aboutus/> */}
     </>
   )
 }
