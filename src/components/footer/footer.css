@@ -39,6 +39,7 @@
     font-weight: 600;
     color:white;
     text-align: center;
+    text-transform: none;
     margin-top: -1rem;
     margin-bottom: 0.5rem;
 }

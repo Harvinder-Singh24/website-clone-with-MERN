@@ -5,6 +5,8 @@ import Footer from '../footer/footer';
 import Helpbtn from '../helpbutton/help';
 import Servicescbnitsprovide from './servicescbnitsprovide';
 import Diversity from './diversity';
+import Timeline from './timeline';
+import Visionandmision from './vision&mision';
 function Aboutus() {
     return (
       <>
@@ -19,6 +21,8 @@ function Aboutus() {
         </div>
 <Servicescbnitsprovide/>
 <Diversity />
+<Timeline />
+<Visionandmision/>
   <Footer/>
       </>
     )

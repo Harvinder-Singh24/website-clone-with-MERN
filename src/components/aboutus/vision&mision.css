@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.visionandmisioncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+}
+
+.conatinermain{
+    display: flex;   
+}
+.visioncontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+    height: 27vh;
+    width: 30vw;
+    background-color: #7f3f98;
+    border-radius: 8px;
+
+}
+.visioncontainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+    height: 27vh;
+    width: 30vw;
+    background-color: #f15a29;
+    border-radius: 8px;
+
+}
+.mainheadvision{
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.mainheadvision{
+font-size: 1.5rem;
+
+}
+.mainheadvision>span{
+    padding-left: 1rem;
+}
+.visionhead{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.visionparadescription{
+font-size: 0.9rem;
+text-transform: none;
+color: white;
+font-weight: 500;
+font-family: 'Ubuntu', sans-serif;
+margin: 2rem;
+margin-top: 1rem;
+line-height: 1.2rem;
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.timelinemaincontainer{
+    height: 130vh;
+    width: 100%;
+    background-color: #f8f9fc;
+}
+.timelinemainhead{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.timelineparahead{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+.timelineparahead1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(58, 193, 247);
+
+}
