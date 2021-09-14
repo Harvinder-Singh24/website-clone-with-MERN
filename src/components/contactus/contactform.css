@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.contactusformdiv{
+    background-image: url("../../images/contactusformbg.jpg");
+    height: 95vh;
+    width: 60vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}

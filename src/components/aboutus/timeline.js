@@ -8,9 +8,13 @@ function Timeline() {
         <div className="timelinemainhead">
             <p className="timelineparahead">reason to pick cbnits as</p>
             <p className="timelineparahead1"> your it  partner</p>
+        </div>   
         </div>
-            
-        </div>
+
+
+
+
+
         </>
     )
 }

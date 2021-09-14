@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contactusbackground{
+    height: 95vh;
+    width: auto;
+    margin-top: -8.6rem;
+    object-fit: cover ;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../images/contactusbg.jpg") ;
+    background-repeat: no-repeat;  
+}
+
+.contactusmaincontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.contactushomepage{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(28, 186, 248)  ;
+    
+}
+.contactushomepage>span{
+
+    color:white;
+}
+
+.contactusquote{
+    font-size: 1.2em;
+   text-align: center;
+   color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}

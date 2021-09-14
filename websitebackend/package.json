@@ -1,0 +1,20 @@
+{
+  "name": "websitebackend",
+  "version": "1.0.0",
+  "description": "Cbnits website backend clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm index.js",
+    "start": "node index.js"
+  },
+  "author": "charanjeet singh sidhu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.0.5",
+    "react-scripts": "^4.0.3"
+  }
+}

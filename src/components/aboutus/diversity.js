@@ -35,7 +35,7 @@ function Diversity() {
             </div>
             </div>
 
-            <div className="x-factor">x-factor of &nbsp;<span> cbnits</span></div>
+            <div className="x-factor">x-factor of&nbsp;<span> cbnits</span></div>
         </>
     )
 }
