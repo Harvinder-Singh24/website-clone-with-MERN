@@ -30,19 +30,9 @@ function Navbar() {
     document.getElementById("onHoverSTUDIO").style.display="none";
   }
 
-  // const onHoutSTUDIO=()=>{
-  //   document.getElementById("onHoverSTUDIO").style.display="none";
-  // }
-  // const onHoutDEDICATEDHIRING=()=>{
-  //   document.getElementById("onHoverDEDICATEDHIRING").style.display="none";
-  // }
-  // const onHoutINSIGHTNEWS11=()=>{
-  //   document.getElementById("onHoverINSIGHTNEWS11").style.display="none";
-  // }
-
   return (
     <>
-      <nav className="navbar" onMouseOut={onHoutNav}>
+      <nav className="navbar">
         <div className="navbarcontainer">
           <Link to="/" className="navbarlogo"><img className="navimage" src={navlogo} alt="Not Found"></img></Link>
           <div className="menu-icon" onClick={handleChange}>
@@ -64,19 +54,19 @@ function Navbar() {
 
             <li className="nav-items">
               <Link to="/" className="nav-links" onMouseOver={onHoverSTUDIO} 
-                // onMouseOut={onHoutSTUDIO} 
+                // onMouseOut={onHoutNav} 
                 onClick={closemobilebar}>STUDIO</Link>
             </li>
 
             <li className="nav-items">
               <Link to="/" className="nav-links" onMouseOver={onHoverDEDICATEDHIRING} 
-                // onMouseOut={onHoutDEDICATEDHIRING} 
+                // onMouseOut={onHoutNav} 
                 onClick={closemobilebar}>DEDICATED HIRING</Link>
             </li>
 
             <li className="nav-items">
               <Link to="/" className="nav-links" onMouseOver={onHoverINSIGHTNEWS11} 
-                // onMouseOut={onHoutINSIGHTNEWS11} 
+                // onMouseOut={onHoutNav} 
                 onClick={closemobilebar}>INSIGHT&NEWS11</Link>
             </li>
           </ul>
@@ -106,18 +96,17 @@ function Navbar() {
 
       </ul>
 
-      <div id="onHoverSTUDIO">
-        STUDIO
+      <div className="sensitivepart" onMouseOut={onHoutNav}>
+        <div id="onHoverSTUDIO">
+          STUDIO
+        </div>
+        <div id="onHoverDEDICATEDHIRING">
+          DEDICATED HIRING
+        </div>
+        <div id="onHoverINSIGHTNEWS11">
+          INSIGHT&NEWS11
+        </div>
       </div>
-      <div id="onHoverDEDICATEDHIRING">
-        DEDICATED HIRING
-      </div>
-      <div id="onHoverINSIGHTNEWS11">
-        INSIGHT&NEWS11
-      </div>
-      {/* <div className="sensitivepart" onMouseOver={onHoutNav}>
-        hello
-      </div> */}
 
      {/* <Aboutus/> */}
 
