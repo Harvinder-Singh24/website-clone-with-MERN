@@ -252,3 +252,27 @@ position: relative;
      font-size: 1.2rem;
     color: white;
  }
+
+
+ #onHoverSTUDIO, #onHoverINSIGHTNEWS11, #onHoverDEDICATEDHIRING {
+    position:fixed;
+    top: 6rem;
+    left: 24rem;
+    background-color:rgb(199, 229, 241);
+    width: 75%;     
+    height: 16rem;
+    padding: 20px;
+    display: none;
+ }
+
+ /* 
+ .sensitivepart{
+    position:fixed;
+    top: 3rem;
+    left: 24rem;
+    background-color:rgb(0, 183, 255);
+    width: 75%;
+    height: 3rem;
+    z-index: 1;
+ } 
+ */
