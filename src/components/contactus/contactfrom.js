@@ -99,10 +99,11 @@ function Contactfrom() {
                     <input type='text' className='contactinput' id='email' name="email" value={user.email} onChange={handleChange} placeholder='Enter your email address' required />
 </div>
 </div>
+<div className="message-div">
 
-                    <label htmlFor='message' className='contactlabel'>Message</label>
-                    <input type='textarea' rows="10" cols="15" className='contactinput' name="message" id='message' value={user.message} onChange={handleChange} required />
-                  
+                    <label htmlFor='message' className='contactlabel'>Message</label><br/>
+                    <textarea rows="5" cols="69" className='contactmessagetextarea' name="message" id='message' value={user.message} onChange={handleChange} required />
+                  </div>
                     <div className='btndiv'>
                         <button className='submitbtn' onClick={submitform} value="submit">Submit</button>
                     </div>

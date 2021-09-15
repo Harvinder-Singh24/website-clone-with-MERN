@@ -125,6 +125,7 @@ form{
   font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 600;
+
 }
 .contactinput{
     margin: 0.5rem 0.5rem 0.5rem 0rem;
@@ -134,11 +135,16 @@ form{
     width: 17rem;
     border-radius: 4px;
     padding: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 .contactinput::placeholder{
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(178, 178, 179);
+}
+.message-div{
+    margin-top: 1rem;
 }
 .contactinput:focus{
     outline: none;
@@ -146,7 +152,44 @@ form{
     box-shadow: 0px 0px 10px  #80bdff ;
 }
 
-input [type="textarea"]{
-    grid-row: 5;
-    columns: 5;
+
+.contactmessagetextarea{
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    border: none;
+    box-shadow: 1px 1px 15px silver ;
+    border-radius: 4px;
+    padding: 0.7rem; 
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contactmessagetextarea:focus{
+    outline: none;
+    border:  2px solid #80bdff;
+    box-shadow: 0px 0px 10px  #80bdff ;
+}
+
+
+.submitbtn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(8, 122, 8);
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 9px;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.submitbtn:hover{
+    background-color: rgb(88, 88, 88);
+  width: 8.1rem;
+  font-size: 1.4rem;
+  height: 2.6rem;
+   transition: 2ms ease-in-out;
 }
