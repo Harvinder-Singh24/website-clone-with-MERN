@@ -59,9 +59,9 @@ function Navbar() {
             </li>
 
             <li className="nav-items">
-              <Link to="/" className="nav-links" onMouseOver={onHoverDEDICATEDHIRING} 
+              <div className="nav-links" onMouseOver={onHoverDEDICATEDHIRING} 
                 // onMouseOut={onHoutNav} 
-                onClick={closemobilebar}>DEDICATED HIRING</Link>
+                onClick={closemobilebar}>DEDICATED HIRING</div >
             </li>
 
             <li className="nav-items">

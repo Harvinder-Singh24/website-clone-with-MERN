@@ -1,0 +1,45 @@
+*{margin:0px;
+padding: 0px;
+box-sizing: border-box;}
+
+.dedicatedHiringbackground{
+    height: 95vh;
+    width: auto;
+    margin-top: -8.6rem;
+    object-fit: cover ;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../images/hiring.jpg") ;
+    background-repeat: no-repeat;  
+}
+
+.dedicatedHiringmaincontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.dedicatedHiringhomepage{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(28, 186, 248)  ;
+    
+}
+.dedicatedHiringhomepage>span{
+
+    color:white;
+}
+
+.dedicatedHiringquote{
+    font-size: 1.2em;
+   text-align: center;
+   color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}

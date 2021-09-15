@@ -97,7 +97,7 @@ color: rgb(28, 186, 248);
     
 }
 
-form{
+.maincontactform>form{
     display: flex;
     flex-direction: column;
     width: 670px;

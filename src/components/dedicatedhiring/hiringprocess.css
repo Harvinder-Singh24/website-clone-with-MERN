@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hiring-Process-Main-Container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 90vh;
+width: 100%;
+background-color: #F8F9FC;
+}
+.hiring-Proces-Image-div>img{
+    height: 70vh;
+}
+.hring-Process-heading{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.hring-Process-heading>span{
+    font-size: 2.5rem;
+    color: rgb(28, 186, 248);
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.hring-Process-Monthly-Heading{
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hring-Process-Monthly-Heading>span{
+    font-size: 2.5rem;
+    color: rgb(28, 186, 248);
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}

@@ -16,10 +16,10 @@ function Footer() {
                         <div className="footernavbar">
                             <ul>
                                 <li className="footernavli"> <Link to="/" className="footer-nav-links">Home</Link></li>
-                                <li className="footernavli"> <Link to="/" className="footer-nav-links">About</Link></li>
-                                <li className="footernavli"> <Link to="/" className="footer-nav-links">DedicatedHiring</Link></li>
+                                <li className="footernavli"> <Link to="/aboutus" className="footer-nav-links">About</Link></li>
+                                <li className="footernavli"> <Link to="/dedicatedHiring" className="footer-nav-links">DedicatedHiring</Link></li>
                                 <li className="footernavli"> <Link to="/" className="footer-nav-links">Career</Link></li>
-                                <li className="footernavli"> <Link to="/" className="footer-nav-links">Contact</Link></li>
+                                <li className="footernavli"> <Link to="/contactus" className="footer-nav-links">Contact</Link></li>
                             </ul>
                         </div>
                      

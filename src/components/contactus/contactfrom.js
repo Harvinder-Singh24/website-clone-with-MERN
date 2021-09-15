@@ -77,7 +77,7 @@ function Contactfrom() {
                 <p className="contactformParaHead"> leave us a <span> message</span></p>
                 <div className="contactusformdiv">
                     <div className="maincontactform">
-                    <form encType="multipart/form-data">
+                    <form   encType="multipart/form-data">
                     <div className="fromnamediv">
                     <div>
                     <label htmlFor='firstname' className='contactlabel'>First Name</label><br/>
