@@ -44,32 +44,33 @@ function Hiringform() {
                 <div className="hiring-From-div">
                     <form>
                         <div className="checkbox-Selection">
-                          <div>  <input className="check-Box-Feilds" type="checkbox" id="chk1" name="Ui/Ux" /><label for="chk1">Ui/Ux</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk2" name="DevOps / Cloud DevOps" /><label for="chk2">DevOps / Cloud DevOps</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk3" name="Hadoop & Data Science" /><label for="chk3">Hadoop & Data Science</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk4" name="Python And Java Development" /><label for="chk4">Python And Java Development</label>
+                          <div>  
+                            <input className="check-Box-Feilds" type="checkbox" id="chk1" name="applylist" value="Ui/Ux" /><label for="chk1">Ui/Ux</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk2" name="applylist" value="DevOps / Cloud DevOps" /><label for="chk2">DevOps / Cloud DevOps</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk3" name="applylist" value="Hadoop & Data Science" /><label for="chk3">Hadoop & Data Science</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk4" name="applylist" value="Python And Java Development" /><label for="chk4">Python And Java Development</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk5" name="Backend Development" /><label for="chk5">Backend Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk6" name="Cloud Development" /><label for="chk6">Cloud Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk7" name="IOT(Internet Of Things)" /><label for="chk7">IOT(Internet Of Things)</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk8" name="Microsoft Dynamics 365" /><label for="chk8">Microsoft Dynamics 365</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk5" name="applylist" value="Backend Development" /><label for="chk5">Backend Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk6" name="applylist" value="Cloud Development" /><label for="chk6">Cloud Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk7" name="applylist" value="IOT(Internet Of Things)" /><label for="chk7">IOT(Internet Of Things)</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk8" name="applylist" value="Microsoft Dynamics 365" /><label for="chk8">Microsoft Dynamics 365</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk9" name="Dedicated Full-Stack Development" /><label for="chk9">Dedicated Full-Stack Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk10" name="Maintenance & Support" /><label for="chk10">Maintenance & Support</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk11" name="Cyber Security" /><label for="chk11">Cyber Security</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk12" name="Blockchain Technology" /><label for="chk12">Blockchain Technology</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk9"  name="applylist" value="Dedicated Full-Stack Development" /><label for="chk9">Dedicated Full-Stack Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk10" name="applylist" value="Maintenance & Support" /><label for="chk10">Maintenance & Support</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk11" name="applylist" value="Cyber Security" /><label for="chk11">Cyber Security</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk12" name="applylist" value="Blockchain Technology" /><label for="chk12">Blockchain Technology</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk13" name="Web Development" /><label for="chk13">Web Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk14" name="React & Angular Development" /><label for="chk14">React & Angular Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk15" name="Quality Engineering" /><label for="chk15">Quality Engineering</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk16" name="Machine Learning" /><label for="chk16">Machine Learning</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk13" name="applylist" value="Web Development" /><label for="chk13">Web Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk14" name="applylist" value="React & Angular Development" /><label for="chk14">React & Angular Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk15" name="applylist" value="Quality Engineering" /><label for="chk15">Quality Engineering</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk16" name="applylist" value="Machine Learning" /><label for="chk16">Machine Learning</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk17" name="Mobile Application Development" /><label for="chk17">Mobile Application Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk18" name="Application Development" /><label for="chk18">Application Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk17" name="applylist" value="Mobile Application Development" /><label for="chk17">Mobile Application Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk18" name="applylist" value="Application Development" /><label for="chk18">Application Development</label>
                             </div>
                         </div>
                     </form>
