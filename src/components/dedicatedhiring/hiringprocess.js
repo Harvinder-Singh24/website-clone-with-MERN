@@ -7,7 +7,7 @@ function Hiringprocess() {
          <div className="hiring-Process-Main-Container">
                 <div className="hring-Process-heading">monthly-basis   <span>hiring process </span> </div>
                 <div className="hiring-Proces-Image-div">
-                <img src={hiringprocessImage} alt="Process Image not found"/>
+                <img src={hiringprocessImage} alt=""/>
                 </div>
                 </div>
                 <div className="hring-Process-Monthly-Heading">fixed-basis  &nbsp;<span> hiring process </span> </div>

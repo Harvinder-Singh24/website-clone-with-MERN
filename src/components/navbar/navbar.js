@@ -15,12 +15,18 @@ function Navbar() {
   const closemobilebar = () => setClick(!click);
  
   const onHoverSTUDIO=()=>{
+    document.getElementById("onHoverINSIGHTNEWS11").style.display="none";
+    document.getElementById("onHoverDEDICATEDHIRING").style.display="none";
     document.getElementById("onHoverSTUDIO").style.display="block";
   }
   const onHoverDEDICATEDHIRING=()=>{
+    document.getElementById("onHoverINSIGHTNEWS11").style.display="none";
+    document.getElementById("onHoverSTUDIO").style.display="none";
     document.getElementById("onHoverDEDICATEDHIRING").style.display="block";
   }
   const onHoverINSIGHTNEWS11=()=>{
+    document.getElementById("onHoverDEDICATEDHIRING").style.display="none";
+    document.getElementById("onHoverSTUDIO").style.display="none";
     document.getElementById("onHoverINSIGHTNEWS11").style.display="block";
   }
 

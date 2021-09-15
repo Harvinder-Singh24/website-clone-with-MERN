@@ -12,8 +12,9 @@ dotenv.config()
 
 
 
-mongoose.connect(process.env.DBAtlas, {
+mongoose.connect(process.env.DBlocal, {
     useNewUrlParser: true,
+    useUnifiedTopology: true
 }).then(() => {
     console.log("[ User Database Connected... ]");
 }).catch((e) => {
@@ -66,8 +67,8 @@ app.post("/contactus", (req, res) => {
                     res.send(err)
                 }
                 else {
-//  console.log("data saved")
-                    res.send({ message: "Thank you for Contacting us.. Soon our representative will contact you" })
+                    console.log("data saved")
+                    res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
                 }
       })
     })
