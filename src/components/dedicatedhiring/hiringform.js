@@ -16,12 +16,30 @@ function Hiringform() {
     //     return props.options, props.value, props.changeHandler;
     //   }
 
+    const [fill_details, setUser] = useState({
+        applylist: [],
+        fullname: "",
+        country: "",
+        contactno: "",
+        email: "",
+        hiringtype: null,
+        message: ""
+    })
 
+    const handleChange = (e) => {
+        const { name, value } = e.target
+
+        setUser({
+            ...fill_details,
+            [name]: value
+        })
+    }
 
 
     return (
         <>
             <div className="hiring-Form-Main-Container">
+                {console.log(fill_details)}
                 <div className="hring-form-heading">select as many of  <span>these as apply</span> </div>
                 <div className="hiring-From-div">
                     <form>
@@ -62,13 +80,13 @@ function Hiringform() {
                             <div>
                                 <label htmlFor='fullname' className='hiringLabel'>Full Name *</label><br />
                                 <input type='text' className='hiringInput' id='fullname' name="fullname"
-                                    // value={user.fullname} onChange={handleChange} 
+                                    value={fill_details.fullname} onChange={handleChange} 
                                     placeholder='Enter your full name' required />
                             </div>
                             <div>
                                 <label htmlFor='country' className='hiringLabel'>Where Are You From *</label><br />
                                 <input type='text' className='hiringInput' id='country' name="country"
-                                    // value={user.country} onChange={handleChange} 
+                                    value={fill_details.country} onChange={handleChange} 
                                     placeholder='Enter your first name' required />
                             </div>
                         </div>
@@ -77,31 +95,31 @@ function Hiringform() {
                             <div>
                                 <label htmlFor='contact' className='hiringLabel'>Contact No*</label><br />
                                 <input type='text' className='hiringInput' id='contact' name="contactno"
-                                    // value={user.contactno} onChange={handleChange}
+                                    value={fill_details.contactno} onChange={handleChange}
                                     placeholder='Enter your contact number' required />
                             </div>
                             <div>
                                 <label htmlFor='email' className='hiringLabel'>Email*</label><br />
                                 <input type='text' className='hiringInput' id='email' name="email"
-                                    //  value={user.email} onChange={handleChange} 
+                                    value={fill_details.email} onChange={handleChange} 
                                     placeholder='Enter your email ' required />
                             </div>
                         </div>
 
                         <div className="form-Type-Of-Hiring">
                             <label htmlFor='monthly' className='hiringLabel'>Type Of Hiring</label>
-                            <input type="radio" id="monthly" name="Monthly" value="Monthly" />
+                            <input type="radio" id="monthly" name="hiringtype" value="Monthly" onChange={handleChange}/>
                             <label for="monthly">Monthly</label>
-                            <input type="radio" id="fixed" name="Fixed" value="Fixed" />
+                            <input type="radio" id="fixed" name="hiringtype" value="Fixed" onChange={handleChange}/>
                             <label for="fixed">Fixed</label>
-                            <input type="radio" id="decide-Later" name="Decide Later" value="Decide Later" />
+                            <input type="radio" id="decide-Later" name="hiringtype" value="Decide Later" onChange={handleChange}/>
                             <label for="decide-Later">Decide Later</label>
                         </div>
 
                         <div className="Your-Note-div">
                             <label htmlFor='message' className='Hiringlabel'>Your Note*</label><br />
                             <textarea rows="5" cols="69" className='hiring-Your-Note-textarea' name="message" id='message'
-                                // value={user.message} onChange={handleChange} 
+                                value={fill_details.message} onChange={handleChange} 
                                 required />
                         </div>
 
