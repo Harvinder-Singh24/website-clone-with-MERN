@@ -3,6 +3,7 @@ import './contactus.css'
 import Navbar from '../navbar/navbar';
 import Helpbtn from '../helpbutton/help';
 import Contactfrom from './contactfrom';
+import Footer from '../footer/footer'
 
 function Contactus() {
 
@@ -18,6 +19,7 @@ function Contactus() {
           </div>
         </div>
         <Contactfrom />
+        <Footer/>
         </>
     )
 }

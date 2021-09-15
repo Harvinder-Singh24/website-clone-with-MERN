@@ -3,8 +3,6 @@ import './contactform.css';
 import axios from "axios";
 
 function Contactfrom() {
-
-    
     const [user, setUser] = useState({
         firstname:"",
         lastname:"",
@@ -49,8 +47,8 @@ function Contactfrom() {
         <div className="contactformmaindiv">
             <div className="contactformcontainer">
                 <div className="contactfromaddressdiv">
-                    <p className="contactAddressParaHead"> office address:</p>
-                    <p className="contactAddressParaHead1"> office </p>
+                    <p className="contactAddressParaHead"> office<span> address:</span></p>
+                    <p className="contactAddressParaHead1"> Office </p>
                     <div className="officeAddress">
                         <h2 className="officeAddressheading">USA</h2>
                         <p className="officeAddressLocation"><i className="fas fa-map-marker-alt" /> <abbr> 1861 Camacho Way San Jose, California 95132</abbr></p>
@@ -71,34 +69,47 @@ function Contactfrom() {
                     </div>
                     <div className="officeAddress">
                         <h2 className="officeAddressheading">Connect with Skype</h2>
-                        <p className="officeAddresscontactNo"><i className="fas fa-skype" /> <abbr>CBNITS Business Development</abbr></p>
+                        <p className="officeAddresscontactNo"><img src="https://img.icons8.com/fluency/22/000000/skype-for-business.png"/> <abbr>CBNITS Business Development</abbr></p>
                     </div>
 
                 </div>
+                <div classname="contactusformdivmaincontainer">
+                <p className="contactformParaHead"> leave us a <span> message</span></p>
                 <div className="contactusformdiv">
                     <div className="maincontactform">
                     <form encType="multipart/form-data">
-                    
-                    <label htmlFor='firstname' className='contactlabel'>First Name</label>
+                    <div className="fromnamediv">
+                    <div>
+                    <label htmlFor='firstname' className='contactlabel'>First Name</label><br/>
                     <input type='text' className='contactinput' id='name' name="firstname" value={user.firstname} onChange={handleChange} placeholder='Enter your first name' required />
-                    
-                    <label htmlFor='lastname' className='contactlabel'> Last Name</label>
+                   </div>
+                   <div>
+                    <label htmlFor='lastname' className='contactlabel'> Last Name</label><br/>
                     <input type='text' className='contactinput' id='name' name="lastname" value={user.lastname} onChange={handleChange} placeholder='Enter your last name ' required />
+                    </div>
+                    </div>
 
-                    <label htmlFor='contact' className='contactlabel'>Contact No</label>
+                    <div className="fromcontactdiv">
+                    <div>
+                    <label htmlFor='contact' className='contactlabel'>Contact No</label><br/>
                     <input type='text' className='contactinput' id='contact' name="contactno" value={user.contactno} onChange={handleChange} placeholder='Enter your contact number' required />
-                   
-                    <label htmlFor='email' className='contactlabel'>Email Address</label>
+                   </div>
+                   <div>
+                    <label htmlFor='email' className='contactlabel'>Email Address</label><br/>
                     <input type='text' className='contactinput' id='email' name="email" value={user.email} onChange={handleChange} placeholder='Enter your email address' required />
+</div>
+</div>
 
                     <label htmlFor='message' className='contactlabel'>Message</label>
-                    <input type='textarea' rows='10' cols='5' className='contactinput' name="message" id='message' value={user.message} onChange={handleChange} required />
-                      
+                    <input type='textarea' rows="10" cols="15" className='contactinput' name="message" id='message' value={user.message} onChange={handleChange} required />
+                  
                     <div className='btndiv'>
-                        <div className='submitbtn' onClick={submitform}>Submit</div>
+                        <button className='submitbtn' onClick={submitform} value="submit">Submit</button>
                     </div>
+                  
                       
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -72,8 +72,6 @@ app.post("/contactus", (req, res) => {
       })
     })
 
-
-
     app.listen(process.env.PORT, () => {
         console.log(`server started at:${process.env.PORT}`)
     });

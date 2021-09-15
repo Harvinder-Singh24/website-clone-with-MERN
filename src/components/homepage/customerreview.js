@@ -12,14 +12,14 @@ function Customerreview() {
                         <div className="introvedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/znMk8-IBJOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   </div>
                         <div className="vediodescription">
                             <p className="vediodescriptionpara">Madhukar Govindaraju</p>
-                            <p className="vediodescriptionpara1">CBNITS help Numly for developing the product and get the product into market.</p>
+                            <span className="vediodescriptionpara1">CBNITS help Numly for developing the product and get the product into market.</span>
                         </div>
                     </div>
                     <div className="interview1">
                         <div className="introvedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zcjU7CRfaJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   </div>
                         <div className="vediodescription">
                             <p className="vediodescriptionpara">Joe Banerjee</p>
-                            <p className="vediodescriptionpara1">CBNITS is proud to be part of your digital transformation journey.</p>
+                            <span className="vediodescriptionpara1">CBNITS is proud to be part of your digital transformation journey.</span>
                         </div>
                     </div>
                 </div>

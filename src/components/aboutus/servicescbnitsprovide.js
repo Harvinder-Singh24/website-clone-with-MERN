@@ -13,7 +13,7 @@ function Servicescbnitsprovide() {
     return (
         <>
             <div className="servicesmaincontainer">
-                    <p>  about <span>cbnits</span></p>
+                    <p className="servicespara">  about <span>cbnits</span></p>
                 <div className="services">
                     <div className="servicesdetials">
                             <div className="serviesimagesandabbriviation"><img src={softpng} alt="Software Engineers png" /> <abbr> 200+ Exper-level Software Engineers,</abbr></div>
