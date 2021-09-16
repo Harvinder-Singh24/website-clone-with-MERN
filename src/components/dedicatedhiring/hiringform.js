@@ -16,42 +16,75 @@ function Hiringform() {
     //     return props.options, props.value, props.changeHandler;
     //   }
 
+    const [fill_details, setUser] = useState({
+        applylist: [],
+        fullname: "",
+        country: "",
+        contactno: "",
+        email: "",
+        hiringtype: null,
+        message: ""
+    })
 
+    const handleChange = (e) => {
+        const { name, value } = e.target
 
+        setUser({
+            ...fill_details,
+            [name]: value
+        })
+    }
+
+    const handlelistChange = (e) => {
+
+        var tempArray=[]
+        for (let index = 1; index <= 18; index++) {
+            if (document.getElementById('chk'+index).checked){
+                tempArray.push(document.getElementById('chk'+index).value)
+            }
+        }
+        
+        setUser({
+            ...fill_details,
+            ['applylist']: tempArray
+        })
+    }
 
     return (
         <>
             <div className="hiring-Form-Main-Container">
+                {console.log(fill_details)}
                 <div className="hring-form-heading">select as many of  <span>these as apply</span> </div>
                 <div className="hiring-From-div">
                     <form>
                         <div className="checkbox-Selection">
-                          <div>  <input className="check-Box-Feilds" type="checkbox" id="chk1" name="Ui/Ux" /><label for="chk1">Ui/Ux</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk2" name="DevOps / Cloud DevOps" /><label for="chk2">DevOps / Cloud DevOps</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk3" name="Hadoop & Data Science" /><label for="chk3">Hadoop & Data Science</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk4" name="Python And Java Development" /><label for="chk4">Python And Java Development</label>
+                          <div>  
+                            <input className="check-Box-Feilds" type="checkbox" id="chk1" onChange={handlelistChange} name="applylist" value="Ui/Ux" /><label for="chk1">Ui/Ux</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk2" onChange={handlelistChange} name="applylist" value="DevOps / Cloud DevOps" /><label for="chk2">DevOps / Cloud DevOps</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk3" onChange={handlelistChange} name="applylist" value="Hadoop & Data Science" /><label for="chk3">Hadoop & Data Science</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk4" onChange={handlelistChange} name="applylist" value="Python And Java Development" /><label for="chk4">Python And Java Development</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk5" name="Backend Development" /><label for="chk5">Backend Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk6" name="Cloud Development" /><label for="chk6">Cloud Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk7" name="IOT(Internet Of Things)" /><label for="chk7">IOT(Internet Of Things)</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk8" name="Microsoft Dynamics 365" /><label for="chk8">Microsoft Dynamics 365</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk5" onChange={handlelistChange} name="applylist" value="Backend Development" /><label for="chk5">Backend Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk6" onChange={handlelistChange} name="applylist" value="Cloud Development" /><label for="chk6">Cloud Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk7" onChange={handlelistChange} name="applylist" value="IOT(Internet Of Things)" /><label for="chk7">IOT(Internet Of Things)</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk8" onChange={handlelistChange} name="applylist" value="Microsoft Dynamics 365" /><label for="chk8">Microsoft Dynamics 365</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk9" name="Dedicated Full-Stack Development" /><label for="chk9">Dedicated Full-Stack Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk10" name="Maintenance & Support" /><label for="chk10">Maintenance & Support</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk11" name="Cyber Security" /><label for="chk11">Cyber Security</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk12" name="Blockchain Technology" /><label for="chk12">Blockchain Technology</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk9"  onChange={handlelistChange} name="applylist" value="Dedicated Full-Stack Development" /><label for="chk9">Dedicated Full-Stack Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk10" onChange={handlelistChange} name="applylist" value="Maintenance & Support" /><label for="chk10">Maintenance & Support</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk11" onChange={handlelistChange} name="applylist" value="Cyber Security" /><label for="chk11">Cyber Security</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk12" onChange={handlelistChange} name="applylist" value="Blockchain Technology" /><label for="chk12">Blockchain Technology</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk13" name="Web Development" /><label for="chk13">Web Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk14" name="React & Angular Development" /><label for="chk14">React & Angular Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk15" name="Quality Engineering" /><label for="chk15">Quality Engineering</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk16" name="Machine Learning" /><label for="chk16">Machine Learning</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk13" onChange={handlelistChange} name="applylist" value="Web Development" /><label for="chk13">Web Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk14" onChange={handlelistChange} name="applylist" value="React & Angular Development" /><label for="chk14">React & Angular Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk15" onChange={handlelistChange} name="applylist" value="Quality Engineering" /><label for="chk15">Quality Engineering</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk16" onChange={handlelistChange} name="applylist" value="Machine Learning" /><label for="chk16">Machine Learning</label>
                             </div>
                             <div>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk17" name="Mobile Application Development" /><label for="chk17">Mobile Application Development</label>
-                            <input className="check-Box-Feilds" type="checkbox" id="chk18" name="Application Development" /><label for="chk18">Application Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk17" onChange={handlelistChange} name="applylist" value="Mobile Application Development" /><label for="chk17">Mobile Application Development</label>
+                            <input className="check-Box-Feilds" type="checkbox" id="chk18" onChange={handlelistChange} name="applylist" value="Application Development" /><label for="chk18">Application Development</label>
                             </div>
                         </div>
                     </form>
@@ -62,13 +95,13 @@ function Hiringform() {
                             <div>
                                 <label htmlFor='fullname' className='hiringLabel'>Full Name *</label><br />
                                 <input type='text' className='hiringInput' id='fullname' name="fullname"
-                                    // value={user.fullname} onChange={handleChange} 
+                                    value={fill_details.fullname} onChange={handleChange} 
                                     placeholder='Enter your full name' required />
                             </div>
                             <div>
                                 <label htmlFor='country' className='hiringLabel'>Where Are You From *</label><br />
                                 <input type='text' className='hiringInput' id='country' name="country"
-                                    // value={user.country} onChange={handleChange} 
+                                    value={fill_details.country} onChange={handleChange} 
                                     placeholder='Enter your first name' required />
                             </div>
                         </div>
@@ -77,31 +110,31 @@ function Hiringform() {
                             <div>
                                 <label htmlFor='contact' className='hiringLabel'>Contact No*</label><br />
                                 <input type='text' className='hiringInput' id='contact' name="contactno"
-                                    // value={user.contactno} onChange={handleChange}
+                                    value={fill_details.contactno} onChange={handleChange}
                                     placeholder='Enter your contact number' required />
                             </div>
                             <div>
                                 <label htmlFor='email' className='hiringLabel'>Email*</label><br />
                                 <input type='text' className='hiringInput' id='email' name="email"
-                                    //  value={user.email} onChange={handleChange} 
+                                    value={fill_details.email} onChange={handleChange} 
                                     placeholder='Enter your email ' required />
                             </div>
                         </div>
 
                         <div className="form-Type-Of-Hiring">
                             <label htmlFor='monthly' className='hiringLabel'>Type Of Hiring</label>
-                            <input type="radio" id="monthly" name="Monthly" value="Monthly" />
+                            <input type="radio" id="monthly" name="hiringtype" value="Monthly" onChange={handleChange}/>
                             <label for="monthly">Monthly</label>
-                            <input type="radio" id="fixed" name="Fixed" value="Fixed" />
+                            <input type="radio" id="fixed" name="hiringtype" value="Fixed" onChange={handleChange}/>
                             <label for="fixed">Fixed</label>
-                            <input type="radio" id="decide-Later" name="Decide Later" value="Decide Later" />
+                            <input type="radio" id="decide-Later" name="hiringtype" value="Decide Later" onChange={handleChange}/>
                             <label for="decide-Later">Decide Later</label>
                         </div>
 
                         <div className="Your-Note-div">
                             <label htmlFor='message' className='Hiringlabel'>Your Note*</label><br />
                             <textarea rows="5" cols="69" className='hiring-Your-Note-textarea' name="message" id='message'
-                                // value={user.message} onChange={handleChange} 
+                                value={fill_details.message} onChange={handleChange} 
                                 required />
                         </div>
 

@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import './contactform.css';
 import axios from "axios";
+import {useHistory} from 'react-router-dom'
 
 function Contactfrom() {
+
+    const history =useHistory();
     const [user, setUser] = useState({
         firstname:"",
         lastname:"",
@@ -26,15 +29,15 @@ function Contactfrom() {
         const {firstname,lastname,contactno,email,message}=user
         if (user){
             if(firstname && lastname && contactno && email && message ) {  
-                    axios.post("http://localhost:4000/contactus",user).then(res=>{
-                        if (res.data.message){
-                            alert(res.data.message)
-                        } else {
-                            alert("Server Error.. ")
-                           
-                            }
-                        })
-
+                axios.post("http://localhost:4000/contactus",user).then(res=>{
+                    if (res.data.alertmsg){
+                        alert(res.data.alertmsg)
+                        history.push("/contactus")
+                    } else {
+                        alert("Server Error ...")
+                        history.push("/contactus")
+                    }
+                })
             } else {
                 alert("Please provide all the mentioned detailed to contact us.")
             }   
@@ -69,7 +72,7 @@ function Contactfrom() {
                     </div>
                     <div className="officeAddress">
                         <h2 className="officeAddressheading">Connect with Skype</h2>
-                        <p className="officeAddresscontactNo"><img src="https://img.icons8.com/fluency/22/000000/skype-for-business.png"/> <abbr>CBNITS Business Development</abbr></p>
+                        <p className="officeAddresscontactNo"><img src="https://img.icons8.com/fluency/22/000000/skype-for-business.png" alt=""/> <abbr>CBNITS Business Development</abbr></p>
                     </div>
 
                 </div>
