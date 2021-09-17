@@ -2,9 +2,13 @@ import React from 'react'
 import './footer.css'
 import companylogo from "../../images/cbnits-full-logo.png"
 import Wave from '../../images/wavecut1.png'
-import { Link } from 'react-router-dom'
+import { Link ,useHistory } from 'react-router-dom'
 import certificate from '../../images/certificate.jpg'
 function Footer() {
+    const history = useHistory();
+     const contactusButton=()=>{
+        history.push("/contactus");
+    }
     return (
         <>
             <div className="footermaincontainer">
@@ -12,13 +16,13 @@ function Footer() {
                 <div className="footerdiv">
                     <div className="footerdata">
                         <p className="footerheadpara">Have a project?</p>
-                        <button className="footerbuttoncontactus">Contact Us</button>
+                        <button className="footerbuttoncontactus" onClick={contactusButton}>Contact Us</button>
                         <div className="footernavbar">
                             <ul>
                                 <li className="footernavli"> <Link to="/" className="footer-nav-links">Home</Link></li>
                                 <li className="footernavli"> <Link to="/aboutus" className="footer-nav-links">About</Link></li>
                                 <li className="footernavli"> <Link to="/dedicatedHiring" className="footer-nav-links">DedicatedHiring</Link></li>
-                                <li className="footernavli"> <Link to="/" className="footer-nav-links">Career</Link></li>
+                                <li className="footernavli"> <Link to="/career" className="footer-nav-links">Career</Link></li>
                                 <li className="footernavli"> <Link to="/contactus" className="footer-nav-links">Contact</Link></li>
                             </ul>
                         </div>

@@ -1,0 +1,63 @@
+.Career-Image{
+height: 450px;
+width: 500px;
+}
+.Career-mainconentdiv{
+    display: flex;
+    flex: wrap;
+    justify-content:center; 
+      align-items:center;
+}
+
+.Career-contentdiv{
+    width: 35%;
+    margin-left: 2rem;
+}
+.Career-parahead{
+    font-size: 2.5rem;
+}
+.Career-parahead1{
+    font-size: 2.5rem;
+    color: rgb(58, 193, 247);
+     margin-bottom: 1.5rem;
+}
+.Career-parahead2{
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2rem;
+}
+.reason-Why-To-Choose-Cbnits{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FC;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.Current-Career-In-Cbnits{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Career-Reason-parahead1{
+    font-size: 2.5rem;
+    color: rgb(58, 193, 247);
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.Career-Reason-parahead{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Current-Career-parahead2{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2rem;
+    
+}

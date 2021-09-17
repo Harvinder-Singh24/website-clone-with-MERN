@@ -59,9 +59,11 @@ function Navbar() {
             </li>
 
             <li className="nav-items">
-              <Link to="/" className="nav-links" onMouseOver={onHoverSTUDIO} 
-                // onMouseOut={onHoutNav} 
-                onClick={closemobilebar}>STUDIO</Link>
+              <Link to="/full-stack" className="nav-links" 
+              onMouseOver={onHoverSTUDIO} 
+                onMouseOut={onHoutNav} 
+                onClick={closemobilebar}
+                >STUDIO</Link>
             </li>
 
             <li className="nav-items">
@@ -73,7 +75,7 @@ function Navbar() {
             <li className="nav-items">
               <Link to="/" className="nav-links" onMouseOver={onHoverINSIGHTNEWS11} 
                 // onMouseOut={onHoutNav} 
-                onClick={closemobilebar}>INSIGHT&NEWS11</Link>
+                onClick={closemobilebar}>INSIGHT&NEWS</Link>
             </li>
           </ul>
         </div>
@@ -108,13 +110,17 @@ function Navbar() {
         </div>
         <div id="onHoverDEDICATEDHIRING">
           DEDICATED HIRING
+        <Link to="/news" className="insightNews-links" onClick={closemobilebar}>NEWS</Link>
         </div>
         <div id="onHoverINSIGHTNEWS11">
-          INSIGHT&NEWS11
+        <ul>
+        <Link to="/news" className="insightNews-links" onClick={closemobilebar}>NEWS</Link>
+
+       </ul>
         </div>
       </div>
 
-     {/* <Aboutus/> */}
+    
 
     </>
   )
