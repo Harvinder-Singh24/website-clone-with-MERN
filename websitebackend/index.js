@@ -12,7 +12,7 @@ dotenv.config()
 
 
 
-mongoose.connect(process.env.DBAtlas, {
+mongoose.connect(process.env.DBlocal, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -94,9 +94,8 @@ app.post("/contactus", (req, res) => {
     contactperson.save(err => {
         if (err) {
             console.log(err)
-            res.send(err)
-        }
-        else {
+            res.send({ alertmsg: "Server Error ... " })
+        } else {
             console.log("data saved")
             res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
         }
@@ -117,7 +116,7 @@ app.post("/dedicatedHiring", (req, res) => {
     temphire.save(err => {
         if (err) {
             console.log(err)
-            res.send(err)
+            res.send({ alertmsg: "Server Error ... " })
         } else {
             console.log("data saved")
             res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
