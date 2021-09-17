@@ -30,13 +30,8 @@ function Contactfrom() {
         if (user){
             if(firstname && lastname && contactno && email && message ) {  
                 axios.post("http://localhost:4000/contactus",user).then(res=>{
-                    if (res.data.alertmsg){
-                        alert(res.data.alertmsg)
-                        history.push("/contactus")
-                    } else {
-                        alert("Server Error ...")
-                        history.push("/contactus")
-                    }
+                    alert(res.data.alertmsg)
+                    history.push("/contactus")
                 })
             } else {
                 alert("Please provide all the mentioned detailed to contact us.")

@@ -5,7 +5,7 @@ function Careerdetial() {
     return (
        <>
        <div className="Career-mainconentdiv">
-          <img src={CareerDetailimage } className="Career-Image" alt="Career-Image-Not-Found" />
+          <img src={CareerDetailimage } className="Career-Image" alt="" />
             <div className="Career-contentdiv">
                 <p class="Career-parahead"> TRANSFORMATION AT</p>
                 <p class="Career-parahead1">SPEED AND SCALE.</p>
