@@ -12,7 +12,7 @@ dotenv.config()
 
 
 
-mongoose.connect(process.env.DBlocal, {
+mongoose.connect(process.env.DBAtlas, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -33,7 +33,7 @@ const contactschema = new mongoose.Schema({
         type: String
 
     },
-   contactno: {
+    contactno: {
     type: Number,
         required: true
     },
@@ -41,38 +41,90 @@ const contactschema = new mongoose.Schema({
         type: String,
         required: true
     },
-message: {
-    type: String,
+    message: {
+        type: String,
         required: true
     }
-  
 })
 const contactschematable = new mongoose.model("contactus", contactschema);
 
 
+const hiringschema = new mongoose.Schema({
+    applylist:{
+        type:String,
+        required: true
+    },
+    fullname:{
+        type: String,
+        required: true
+    },
+    country:{
+        type: String,
+        required: true
+    },
+    contactno:{
+        type: Number,
+        required: true
+    },
+    email:{
+        type: String,
+        required: true
+    },
+    hiringtype:{
+        type: String,
+        required: true
+    },
+    message:{
+        type: String,
+        required: true
+    }
+})
+const hiringschematable = new mongoose.model("hireus", hiringschema);
+
+
 app.post("/contactus", (req, res) => {
-
     const { firstname, lastname, email, contactno, message } = req.body;
-
     const contactperson = new contactschematable({
-                firstname:firstname,
-                lastname: lastname,
-                contactno:contactno,
-                email: email,
-              message:message
-            })
-            contactperson.save(err => {
-                if (err) {
-                    console.log(err)
-                    res.send(err)
-                }
-                else {
-                    console.log("data saved")
-                    res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
-                }
-      })
+        firstname:firstname,
+        lastname: lastname,
+        contactno:contactno,
+        email: email,
+        message:message
     })
+    contactperson.save(err => {
+        if (err) {
+            console.log(err)
+            res.send(err)
+        }
+        else {
+            console.log("data saved")
+            res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
+        }
+    })
+})
 
-    app.listen(process.env.PORT, () => {
-        console.log(`server started at:${process.env.PORT}`)
-    });
+app.post("/dedicatedHiring", (req, res) => {
+    const { applylist, fullname, country, contactno, email, hiringtype, message } = req.body;
+    const temphire = new hiringschematable({
+        applylist: JSON.stringify(applylist), 
+        fullname: fullname, 
+        country: country, 
+        contactno: contactno, 
+        email: email, 
+        hiringtype: hiringtype, 
+        message: message
+    })
+    temphire.save(err => {
+        if (err) {
+            console.log(err)
+            res.send(err)
+        } else {
+            console.log("data saved")
+            res.send({ alertmsg: "Thank you for Contacting us.. Soon our representative will contact you" })
+        }
+    })
+})
+
+app.listen(process.env.PORT, () => {
+    console.log(`server started at:${process.env.PORT}`)
+});
