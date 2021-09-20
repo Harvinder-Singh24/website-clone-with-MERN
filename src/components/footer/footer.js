@@ -18,7 +18,7 @@ function Footer() {
                         <p className="footerheadpara">Have a project?</p>
                         <button className="footerbuttoncontactus" onClick={contactusButton}>Contact Us</button>
                         <div className="footernavbar">
-                            <ul>
+                            <ul className="footer-Ul">
                                 <li className="footernavli"> <Link to="/" className="footer-nav-links">Home</Link></li>
                                 <li className="footernavli"> <Link to="/aboutus" className="footer-nav-links">About</Link></li>
                                 <li className="footernavli"> <Link to="/dedicatedHiring" className="footer-nav-links">DedicatedHiring</Link></li>
@@ -30,7 +30,7 @@ function Footer() {
                         <div className="footercompanydetials">
                             <div className="footercompanylogo"><img className="companylogo" src={companylogo} alt="Logo not found" /></div>
                             <div className="companysociallinks">
-                                <ul>
+                                <ul className="footer-Ul">
                                     <li className="companysociallinksli"> <Link to="https://www.facebook.com/CBNITS"><i class="fab fa-facebook-f"/></Link></li>
                                     <li className="companysociallinksli"> <Link to="https://twitter.com/CBNITS" ><i class="fab fa-twitter"/></Link></li>
                                     <li className="companysociallinksli"> <Link to="https://www.instagram.com/cbnits/" ><i class="fab fa-instagram"/></Link></li>

@@ -7,9 +7,9 @@ import Footer from '../../footer/footer';
 function Angular() {
 
     const history = useHistory();
-    const HireUsButton=()=>{
-       history.push("/dedicatedHiring");
-   }
+    const HireUsButton = () => {
+        history.push("/dedicatedHiring");
+    }
 
     return (
         <>

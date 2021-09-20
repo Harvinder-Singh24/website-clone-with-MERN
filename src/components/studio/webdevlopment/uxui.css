@@ -1,0 +1,337 @@
+*{margin: 0px;
+    padding: 0px;}
+    
+    .Ux-Ui-Design-background{
+        height: 95vh;
+        width: auto;
+        margin-top: -8.6rem;
+        object-fit: cover ;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../../images/UxUiBackgorund.jpg") ;
+        background-repeat: no-repeat;  
+    }
+    
+    .Ux-Ui-Design-maincontainer{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .Ux-Ui-Design-homepage{
+        font-size: 3.3em;
+        font-weight: 500;
+        text-align: center;
+        color: rgb(58, 193, 247);
+    }
+    .Ux-Ui-Design-homepage>span{
+      
+        color:white;
+    }
+    
+    
+    .Ux-Ui-Design-quote{
+        font-size: 1.2em;
+       text-align: center;
+       color: white;
+    }
+    .webpage-Mobile{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top: 3rem;
+       
+    }
+    .webpage-Mobile-para{
+        width: 30%;
+        margin-left: 5rem;
+    }
+    .Ux-Ui-Design-offerings{
+        margin-top: 2.5rem;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .Ux-Ui-Design-offerings1{
+        
+        text-transform: none;
+        font-size: 0.9rem;
+        font-weight: normal;
+        line-height: 1.3rem;
+     
+    }
+    .uxuxiicon-image{
+        height: 400px;
+        width: 400px;
+    }
+    .Ux-Ui-Design-offerings>span{
+        color:rgb(58, 193, 247);
+    }
+    .quote-Box-Ux-Ui-Design-Wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height:60vh;
+        background-color: rgb(49, 178, 230);
+        width: 100%;
+
+    }
+    .div-Ux-Ui-Design-Box-quote{
+    display: flex;
+    text-transform: uppercase;
+        justify-content: center;
+        align-items: center;    
+        width: 60%;
+
+        text-align: center;
+        padding: 0.7rem;
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 600;
+    }
+    .div-Ux-Ui-Design-Box-quote>span{
+        color: orangered;
+       
+    }
+
+    .div-Ux-Ui-Design-Box-quote1{
+        display: flex;
+        text-transform: none;
+            justify-content: center;
+            align-items: center;    
+            width: 60%;
+            
+            text-align: center;
+            font-size: 1.3rem;
+            color: white;
+            font-weight: 600;
+        }
+    .Ux-Ui-Design-techincal-Box{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+   
+    }
+    .techincal-para-Heading{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+   
+     text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+    }
+    .techincal-para-Heading>span{
+        color: rgb(61, 198, 252);
+    }
+
+
+
+    .btndiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .Hiring-submitbtn{
+        font-size: 1.1rem;
+        width: 8rem;
+        height: 2.8rem;
+        text-transform: uppercase;
+        background-color: rgb(4, 145, 4);
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+    .Hiring-submitbtn:hover{
+        background-color: rgb(145, 143, 143);
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    button{
+        width: 80px;
+        height: 40px;
+        margin: 15px;
+      }
+      .blackButton{
+        background-color: black;
+        color: white;
+      }
+      
+      .whiteButton{
+        background-color: white;
+        color: black;
+      }
+      
+.why-is-cbnits-more-than-Wrapper{
+    display: flex;
+}
+      .cbnits-Ui-Ux-advantage-Wrapper{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        margin: 1.5rem;
+          width: 240px;
+          height: 200px;
+          border-radius: 5px;
+          background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)),url('../../../images/background.png');
+        
+      }
+      .advantage-Box-Wrapper{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .advantage-Box-Wrapper-heading{
+          display: flex;
+          margin: 0.5rem;
+          justify-content: center;
+          align-items: center;
+      }
+      .number-para{
+          font-size: 3.3rem;
+          color: rgb(61, 198, 252);
+          font-weight: bold;
+      }
+      .advantage-abbr{
+          font-size: 1rem;
+          font-weight: bold;
+          margin-left: 0.5rem;
+      }
+      .hr-line{
+          height:1px;
+          width: 90%;
+          background-color:  rgb(194, 193, 193);
+
+      }
+      .advantage-Detial-para{
+          margin: 0.8rem;
+          font-size: 0.9rem;
+      }
+      .what-We-Can-Design-For-you{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .What-We-Can-Wrapper{
+          display: flex;
+
+      }
+     .Wrapper-Box-Design{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 250px;
+         height: 70px;
+         margin: 1rem;
+         background-color: rgb(253, 253, 253);
+         border-radius: 6px;
+         border: 1px solid rgb(236, 236, 236);
+         box-shadow: 1px 1px 15px rgb(194, 193, 193);
+     }
+
+     .number-Box-circle-Design{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: rgb(61, 198, 252);
+         width: 45px;
+         height: 45px;
+         border-radius: 50%;
+
+
+     }
+     .number-Box-circle-Design>p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+       border: 1px;
+       border-color: white;
+   border-style: dashed;
+   font-size: 2rem;
+   color:white;
+     }
+
+     .Wrapper-Box-Design-Detail{
+         font-size: 0.9rem;
+         margin: 0.8rem;
+         font-weight: 600;
+     }
+
+
+     .technology-Stack-Wrapper{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 60vh;
+         width: 100%;
+        background-color:#f8f9fd;
+
+     }
+
+     .technology-Details-Stack-Parahead{
+         display: flex;
+         justify-content: center;
+         align-items:center;
+         font-weight: bold;
+         font-size: 3rem;
+         text-align: center;
+         text-transform: uppercase;
+         margin-top: 2rem;
+     }
+     .technology-Details-Stack-Parahead>span{
+         display: flex;
+         font-weight: bold;
+         font-size: 3rem;
+         text-align: center;
+         color: rgb(61, 198, 252);
+         
+     }
+
+
+     .technology-Details-Stack-ParaDeatials{
+         text-transform: none;
+         font-size: 1.3rem;
+         text-align: center;
+        
+     }
+
+     .technical--ul-Ui-Ux{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        text-align: center;
+    
+    }
+    .technical-Li-List-Ui-Ux{
+    display: flex;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid rgb(216, 216, 216);
+    }
+    

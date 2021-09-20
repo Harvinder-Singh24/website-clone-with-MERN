@@ -58,53 +58,95 @@
  
     .quote-Box-full-stack-Wrapper{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items:center;
         height:30vh;
-        background-color: skyblue;
+        background-color: rgb(49, 178, 230);
         width: 100%;
+
     }
     .div-full-Stack-Box-quote{
-        display: flex;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: left;
         justify-content: center;
-        align-items: center;
+        align-items: center;    
         width: 60%;
         text-align: center;
         padding: 1rem;
-  
-
+        font-size: 2.5rem;
         color: white;
-        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .div-full-Stack-Box-quote>span{
+        color: orangered;
+        margin-left: 7rem;
     }
 
-    .full-Stack-Advantages-Box{
-        margin-top: 5rem;
+    .full-Stack-techincal-Box{
         display: flex;
         flex-direction: column;
-        height: 50vh;
-        background-color: rgb(248, 248, 248);
+        height: 60vh;
+   
     }
-    .advantage-para-Heading{
-        display:inline-flex;
+    .techincal-para-Heading{
+        display:flex;
+        flex-direction: column;
         justify-content: center;
-          margin-left: 30rem;
+        align-items:center;
+     text-transform: uppercase;
   margin-top: 3rem;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
 
     }
-    .advantage-para-Heading1{
-        font-weight: 600;
-        display:inline-flex;
-          justify-content: center;
-          margin-left: 45rem;
-          margin-right: 22rem;
-          font-size: 2rem;
-    font-size: 2.4rem;
+    .techincal-para-Heading>span{
+        color: rgb(61, 198, 252);
     }
-    .advantage-para-Heading1>span{
-        color: rgb(58, 193, 247);
-    }
+
+.technical--ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    text-align: center;
+
+}
+.technical-Li-List{
+display: flex;
+text-align: center;
+background-color: rgb(228, 228, 228);
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+padding: 0.5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+border-radius: 22px;
+font-weight: 600;
+font-size: 1.1rem;
+border: 1px solid rgb(216, 216, 216);
+}
+
+/* .technical-Li-List{
+   
+    color: white;
+    display: flex;
+text-align: center;
+background-color: skyblue;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+padding: 0.5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+border-radius: 22px;
+font-weight: 600;
+font-size: 1.1rem;
+border: 1px solid rgb(216, 216, 216);
+    
+}        */
+
     .btndiv{
         display: flex;
         justify-content: center;
@@ -130,3 +172,18 @@
     html{
         scroll-behavior: smooth;
     }
+    button{
+        width: 80px;
+        height: 40px;
+        margin: 15px;
+      }
+      .blackButton{
+        background-color: black;
+        color: white;
+      }
+      
+      .whiteButton{
+        background-color: white;
+        color: black;
+      }
+      
