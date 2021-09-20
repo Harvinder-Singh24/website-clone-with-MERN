@@ -14,17 +14,76 @@ function UxandUi() {
     const HireUsButton = () => {
         history.push("/dedicatedHiring");
     }
-    // const BtnEle = document.querySelector("technical-Li-List-Ui-Ux")
-    // BtnEle.addEventListener("click", () => {
-    //     document.getElementById(Backend-Button-list).style.backgroundColor="blue"
-    //  });
-   
-    // var clck_btn = document.getElementById("clicked_button");
-    //         var unclck_btn = document.getElementById("Unclicked_button");
 
-            function clickedButtonList(clicked) {
-                alert.innerHTML = "Button is clicked"+clicked;
-            }     
+
+    const clcicked_button_color = (id) => {
+        document.getElementById(id).style.backgroundColor = "rgb(61, 198, 252)";
+        document.getElementById(id).style.color = "white";
+    }
+    const Unclcicked_button_color = (id) => {
+        document.getElementById(id).style.backgroundColor = "rgb(228, 228, 228)";
+        document.getElementById(id).style.color = "black";
+    }
+    const L1 = "Backend-Button-list";
+    const L2 = "front-end-button";
+    const L3 = "mobile-dev";
+    const L4 = "database-button";
+    const L5 = "project-Manage";
+    const L6 = "technical-skills";
+    const clickedButtonList = () => {
+        clcicked_button_color(L1);
+        Unclcicked_button_color(L2);
+        Unclcicked_button_color(L3);
+        Unclcicked_button_color(L4);
+        Unclcicked_button_color(L5);
+        Unclcicked_button_color(L6);
+
+    }
+    const clickedButtonList1 = () => {
+        clcicked_button_color(L2);
+        Unclcicked_button_color(L1);
+        Unclcicked_button_color(L3);
+        Unclcicked_button_color(L4);
+        Unclcicked_button_color(L5);
+        Unclcicked_button_color(L6);
+
+    }
+    const clickedButtonList2 = () => {
+        clcicked_button_color(L3);
+        Unclcicked_button_color(L2);
+        Unclcicked_button_color(L1);
+        Unclcicked_button_color(L4);
+        Unclcicked_button_color(L5);
+        Unclcicked_button_color(L6);
+
+    }
+    const clickedButtonList3 = () => {
+        clcicked_button_color(L4);
+        Unclcicked_button_color(L2);
+        Unclcicked_button_color(L3);
+        Unclcicked_button_color(L1);
+        Unclcicked_button_color(L5);
+        Unclcicked_button_color(L6);
+
+    }
+    const clickedButtonList4 = () => {
+        clcicked_button_color(L5);
+        Unclcicked_button_color(L2);
+        Unclcicked_button_color(L3);
+        Unclcicked_button_color(L4);
+        Unclcicked_button_color(L1);
+        Unclcicked_button_color(L6);
+
+    }
+    const clickedButtonList5 = () => {
+        clcicked_button_color(L6);
+        Unclcicked_button_color(L2);
+        Unclcicked_button_color(L3);
+        Unclcicked_button_color(L4);
+        Unclcicked_button_color(L5);
+        Unclcicked_button_color(L1);
+    }
+
 
 
     return (
@@ -173,15 +232,14 @@ function UxandUi() {
 
 
                 <ul className="technical--ul-Ui-Ux" >
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="Backend-Button-list" >Back-End</li>
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="front-end-button">Front-End</li>
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="mobile-dev">Mobile App Development</li>
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="database-button">Database</li>
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="project-Manage">Project Management Tools</li>
-                    <li className="technical-Li-List-Ui-Ux"  onClick={clickedButtonList(this.id)} id="technical-skills">Technical Skill</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList} id="Backend-Button-list" >Back-End</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList1} id="front-end-button">Front-End</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList2} id="mobile-dev">Mobile App Development</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList3} id="database-button">Database</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList4} id="project-Manage">Project Management Tools</li>
+                    <li className="technical-Li-List-Ui-Ux" onClick={clickedButtonList5} id="technical-skills">Technical Skill</li>
                 </ul>
-                <p id="clicked_button" style="background-color: rgb(61, 198, 252);color: white;"></p>
-                <p id="Unclicked_button" style="background-color: rgb(228, 228, 228);color: black;"></p>
+                
 
 
                 <div className='btndiv'>
