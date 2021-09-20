@@ -59,7 +59,7 @@ function Navbar() {
             </li>
 
             <li className="nav-items">
-              <Link to="/ux-ui" className="nav-links" 
+              <Link to="/golang" className="nav-links" 
               onMouseOver={onHoverSTUDIO} 
                 onMouseOut={onHoutNav} 
                 onClick={closemobilebar}

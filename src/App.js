@@ -11,6 +11,8 @@ import Angular from './components/studio/webdevlopment/angular';
 import ReactJs from './components/studio/webdevlopment/react';
 import FullStack from './components/studio/webdevlopment/fullstack';
 import UxandUi from './components/studio/webdevlopment/uxui';
+import NodeJS from './components/studio/backend/node';
+import Golang from './components/studio/backend/golang';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route  exact path="/react-link"><ReactJs /></Route>
           <Route  exact path="/full-stack"><FullStack /></Route>
           <Route  exact path="/Ux-Ui"><UxandUi /></Route>
+          <Route  exact path="/node-js"><NodeJS /></Route>
+          <Route  exact path="/golang"><Golang /></Route>
 
 
       </Switch>
